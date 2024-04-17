@@ -1,0 +1,6 @@
+hosts:
+  itemtype: Computer
+  fields:
+  - 1   # name
+  - 4   # ComputerType.name
+  hostname: $1
