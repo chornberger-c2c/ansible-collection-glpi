@@ -1,0 +1,11 @@
+---
+version: 1
+
+build_arg_defaults:
+  EE_BASE_IMAGE: 'quay.io/ansible/awx-ee'
+  # EE_BUILDER_IMAGE: 'registry.redhat.io/ansible-automation-platform-24/ansible-builder-rhel9'
+
+dependencies:
+  # galaxy: requirements.yml
+  python: requirements.txt
+  # system: bindep.txt

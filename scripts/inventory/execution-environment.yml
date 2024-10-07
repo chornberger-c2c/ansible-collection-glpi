@@ -1,0 +1,26 @@
+---
+version: 3
+
+dependencies:
+  python:
+    - pyyaml
+    - yamlloader
+    - glpi-api
+  ansible_core:
+    package_pip: ansible-core==2.14.4
+  ansible_runner:
+    package_pip: ansible-runner
+  system:
+    # - python38-devel      [platform:rpm compile]
+    # - python38-dev        [platform:dpkg]
+    # - subversion          [platform:dpkg]
+    - python3-devel     [platform:rpm]
+    - gcc-c++           [platform:rpm]
+    - subversion        [platform:rpm]
+    - git-lfs           [platform:rpm]
+    - libxslt-devel     [platform:rpm]
+    - libxml2-devel     [platform:rpm]
+
+images:
+  base_image: 
+    name: 'quay.io/ansible/awx-ee:latest'
