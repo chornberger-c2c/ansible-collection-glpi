@@ -2,3 +2,11 @@ plugin: inv
 glpi_url: http://172.17.0.1:8080/apirest.php/
 glpi_usertoken: MfgiskB9dvgxYnitx3yXDqfgdBeySKmuRUyWqldV
 glpi_apptoken: oNhJ8ixFfKMlEvUE61dKtRs0ojx4fvy81Mrcr2ZJ
+
+queries:
+  hosts:
+    itemtype: Computer
+    fields:
+    - 1   # name
+    - 4   # ComputerType.name
+    hostname: $1
