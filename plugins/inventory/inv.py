@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import os
 import re
 from ansible.plugins.inventory import BaseInventoryPlugin
