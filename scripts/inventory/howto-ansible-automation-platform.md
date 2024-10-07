@@ -29,6 +29,19 @@ $ podman tag quay.io/mynamespace/custom-ee automationhub.local/mynamespace/custo
 $ podman push --tls-verify=false automationhub.local/mynamespace/custom-ee
 ```
 
+Steps to be done on a workstation (if not Automation Hub is available):
+```
+$ mkdir -p ansible-builder
+$ python3 -m venv ansible-builder
+$ ansible-builder/bin/pip install ansible-builder
+$ bash ./ansible-builder/bin/activate
+$ ./ansible-builder/bin/ansible-builder create
+$ cd context
+$ docker build -t quay.io/mynamespace/my-awx-docker-ee:latest .
+$ docker push quay.io/mynamespace/my-awx-docker-ee
+```
+
+
 ## Create Project in Ansible Automation Platform
 
 Project must point to this [repository](https://github.com/chornberger-c2c/ansible-collection-glpi) or a fork.
