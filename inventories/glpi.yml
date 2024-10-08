@@ -1,7 +1,7 @@
 plugin: inv
 glpi_url: http://172.17.0.1:8080/apirest.php/
-glpi_usertoken: MfgiskB9dvgxYnitx3yXDqfgdBeySKmuRUyWqldV
-glpi_apptoken: oNhJ8ixFfKMlEvUE61dKtRs0ojx4fvy81Mrcr2ZJ
+glpi_usertoken: LzOC7XlqpDEIiLjBOaakwrOuMWNgP4Cj6btSBsxX
+glpi_apptoken: 6iigF50YJbL48q6gIkQdepK8XgVbQV6UAbYHGHx8
 
 queries:
   hosts:
